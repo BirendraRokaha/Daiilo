@@ -51,6 +51,10 @@ ul{
     transform: scale(1.1);
     
 }
+
+.top-nav h1:active {
+    transform: scale(0.80);
+}
 .top-nav ul{  
     display: flex;
 }
@@ -61,11 +65,21 @@ ul{
     padding: 0 10px;
 }
 
+.inbtn{
+    background-color: rgb(250, 250, 250);
+    color: rgb(45, 48, 46);
+}
+
+.upbtn{
+    background-color: rgb(113, 206, 144);
+    color: #FFFFFF;
+}
+
 .right-nav button{
     border: 1px solid rgb(113, 206, 144);
     border-radius: 25px;
-	background-color: rgb(113, 206, 144);
-	color: #FFFFFF;
+	/* background-color: rgb(113, 206, 144); 
+	color: #FFFFFF; */
 	font-size: 12px;
 	padding: 12px 25px;
     letter-spacing: 1px;
@@ -73,6 +87,8 @@ ul{
     text-transform: uppercase;
     transition: transform 100ms ease-in;
 }
+
+
 
 .right-nav button:focus {
     outline: none; 
@@ -114,10 +130,11 @@ ul{
 /*showcase*/
 
 .btn{  
-    background: #2e2c2c;
+    background: rgb(113, 206, 144);
     border: 0;
-    font-size: 18px;
-    color: bisque;
+    font-weight: 550;
+    font-size: 19px;
+    color: rgb(247, 244, 241);
     padding: 10px 20px; 
 }
 
@@ -135,12 +152,22 @@ ul{
 }
 
 /*top-cards*/
-.top-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;/*same as typing 4 times*/
-    grid-gap: 20px;
-    margin-bottom: 30px;
 
+.top-cards{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+    margin: 0px 5px;
+    margin-bottom: 30px;
+}
+
+.top-cards > div{
+    border: rgb(240, 245, 240) solid 1px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 20px rgba(111, 197, 147, 0.25), 
+			0 10px 10px rgba(197, 207, 202, 0.22);
 }
 
 .top-cards img{

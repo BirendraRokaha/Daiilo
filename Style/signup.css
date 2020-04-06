@@ -40,6 +40,10 @@ header h1:hover{
     transform: scale(1.1);    
 }
 
+header h1:active {
+    transform: scale(0.80);
+}
+
 main{
     display: flex;
     justify-content: center;
