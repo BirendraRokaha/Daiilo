@@ -22,7 +22,7 @@ ul{
 }
 
 .container{
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(219, 240, 219));
+    background-image: linear-gradient(rgb(234, 243, 236), rgb(219, 240, 219));
     width: 90%;
     max-width: 1100px;
     margin: auto;
@@ -32,54 +32,41 @@ ul{
 
 .top-nav{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;
     height: 100px;
     padding: 20px 0;
     font-size: 13px;
-    position: relative;
 }
+    
 .top-nav h1{
     font-size: 45px;
     letter-spacing: 5px;
-    position: absolute;
-    left: 150px;
+    margin-left: 15%;    
+    justify-self: start;
     transition: transform 100ms ease-in;
 }
+
 .top-nav h1:hover{
-    transform: scale(1.1);
-    
+    transform: scale(1.1); 
 }
 
-.top-nav h1:active {
-    transform: scale(0.80);
+.right-btns{
+    margin-right: 10%;
 }
-.top-nav ul{  
+
+.right-btns ul{
     display: flex;
+    justify-content: space-evenly;
 }
 
-.top-nav ul li{
-    position: relative;
-    left: 300px;
-    padding: 0 10px;
-}
 
-.inbtn{
-    background-color: rgb(250, 250, 250);
-    color: rgb(45, 48, 46);
-}
-
-.upbtn{
-    background-color: rgb(113, 206, 144);
-    color: #FFFFFF;
-}
-
-.right-nav button{
+.right-btns button{
     border: 1px solid rgb(113, 206, 144);
     border-radius: 25px;
-	/* background-color: rgb(113, 206, 144); 
-	color: #FFFFFF; */
+	background-color: rgb(113, 206, 144);
+	color: #FFFFFF;
 	font-size: 12px;
 	padding: 12px 25px;
     letter-spacing: 1px;
@@ -88,25 +75,22 @@ ul{
     transition: transform 100ms ease-in;
 }
 
-
-
-.right-nav button:focus {
+.right-btns button:focus {
     outline: none; 
 }
 
-.right-nav button:active {
+.right-btns button:active {
     transform: scale(0.80);
 }
 
-
-.right-nav button:hover{
+.right-btns button:hover{
     background-color: rgb(91, 179, 116);
 }
 
 .main-nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 50px;
     padding: 20px 0;
     font-size: 13px;
@@ -114,6 +98,7 @@ ul{
 
 .main-nav ul{  
     display: flex;
+    justify-content: space-evenly;
     width: 80%;
 }
 
